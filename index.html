@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- I'm using template from getbootstrap.com source to build my page -->
+  <meta charset='utf-8' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Waterfront Access Plan</title>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='css/styles.css' rel='stylesheet' />
+  <!-- These two functions I won't use  right now
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+
+  <!-- the sidebar contains logo, title and info about project -->
+  <div id='sidebar'>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-715VMUUaOfZR3/rWXZJ9agJ/udwSXGEigabzUbJm2NR4/v5wpDy8c14yedZN6NL7" crossorigin="anonymous">
+    <h2><img src="wa.gif" width="120" height="70"></h2>
+
+    <h3>Waterfront Zoning for Public Access</h3>
+
+    <h6>New York City is one of the few municipalities in the country that requires waterfront public access as a condition of some forms of development. Medium to high density residential, commercial, and community facility developments must provide
+      and maintain publicly-accessible space along the waterfront that is physically and visually connected to upland neighborhoods. This requirement is rooted in the long-standing public trust doctrine which ensures the public’s access to the City’s
+      waterfronts and waterways.</h6>
+
+    <h6>New York City adopted special zoning regulations affecting waterfront
+      development in 1993. Waterfront zoning (Article VI, Chapter 2 of the Zoning
+      Resolution) addresses the form, size and location of new buildings as well as
+      the amount and quality of publicly accessible space required along the waterfront.
+      The regulations apply to properties that are located within a waterfront block,
+      which is a block adjacent to or intersected by the shoreline. When there is an
+      opportunity to coordinate multiple waterfront public access areas, a <strong>Waterfront
+        Access Plan</strong> (WAP) is created and may contain public access modifications that
+      respond to the geography’s site conditions.</h6>
+
+    <img src="sidebar_picture.jpg" alt="Trulli" width="300" height="200">
+
+    <p>
+      <h6>Waterfront zoning regulations were last modified in 2009 to expand
+        the design standards and promote a wider variety of public access areas.
+        For more information on how waterfront zoning maximizes the public’s access to,
+        and enjoyment of, the city’s waterfront resources while enabling appropriate
+        redevelopment along the shoreline, visit the Department of City Planning’s page on
+        <a href="https://www1.nyc.gov/site/planning/zoning/districts-tools/waterfront-zoning.page" target="_blank">Waterfront Zoning.</a>
+        <p>
+      </h6>
+
+      <h9><strong>
+          <p>Source:
+        </strong><a href="https://waterfrontaccess.planning.nyc.gov/?visibleLayerGroups=%5B%22waterfront-access--entry-points%22%2C%22waterfront-access--publicly-owned%22%2C%22waterfront-access--wpaas%22%5D#10.35/40.6414/-73.9208/www/"
+          target="_blank">NYC Department of City Planning</a></h9>
+  </div>
+
+  </div>
+
+  <!-- this is the map container, which will hold the mapboxGL map -->
+  <div id='map-container'></div>
+  <div id="map"></div>
+  <div id="geocoder" class="geocoder"></div>
+  <div id="map"></div>
+  <div id='feature-info'></div>
+
+  <!-- Load mapboxGL, jQuery, then our local javascript files -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src='js/scripts.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" type="text/css" />
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/* I'm using font style from bootstrap.com */
+https: //stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+/* get rid of the browser's default margin and padding around the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* on hover, make the background darker and turn the cursor to a pointer */
+button:hover {
+  cursor: pointer;
+  background-color: #006987;
+}
+
+/* on hover, the information about access plan when mouse points in shows in the box */
+#feature-info {
+  position: fixed;
+  left: 50%;
+  top: 615px;
+  background: #41ae76;
+  padding: 20px;
+  min-height: 10px;
+  width: 320px;
+  height: 113px;
+}
+
+/* sidebar is a botton-sidebar with and positioned to the left */
+#sidebar {
+  position: fixed;
+  top: 15px;
+  left: 7px;
+  bottom: 15px;
+  width: 370px;
+  overflow: scroll;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: "Arial";
+  padding-left: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* absolute position the map container as full screen, leaving 300 pixels on the left */
+#map-container {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 385px;
+}
+
+/* the logo of Waterfront Alliance pups up where the office is located in Lower Manhattan */
+.marker {
+  background-image: url('../img/wa.jpg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* pop-up contains the information about the organization */
+.mapboxgl-popup {
+  max-width: 100px;
+}
+
+/* pop-up contains the information about the organization */
+.mapboxgl-popup-content {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* the search function can help find any address the user would like to find */
+.geocoder {
+  position: fixed;
+  z-index: 1;
+  width: 50%;
+  left: 80%;
+  margin-left: -25%;
+  top: 10px;
+}
+
+.mapboxgl-ctrl-geocoder {
+  min-width: 100%
+}
